@@ -98,7 +98,7 @@ const Dashboard = () => {
                 <div className='image-container2'>
                    <h4>{items?.name}</h4>
                    <div style={{display:'flex',justifyContent:'space-evenly'}}>
-                    <p><FontAwesomeIcon icon="fa-solid fa-video" />
+                    <p>
                       Online</p>
                     <p>Paid</p>
                    </div>
