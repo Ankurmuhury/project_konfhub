@@ -1,13 +1,207 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.profile-container {
+  height: 40px;
+}
+.profile-img-container {
+  height: 42px;
+  width: 42px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #fff;
+  background: #fff;
+  box-shadow: 1px 1px 10px #0002;
+}
+.image-container{
+  margin: 62px;
+  height: 494px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    background: #fff;
+    box-shadow: 1px 1px 10px #0002;
+}
+.image-container1{
+  margin: 54px;
+  position: sticky!important;
+  right: 0;
+  top:0;
+  font-size: 20px;
+    /* height: 366px; */
+    width: 286px;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    /* border: 1px solid #fff; */
+    background: #fff;
+    padding:10px
+}
+.image-container2{
+   height: 366px;
+   position: -webkit-sticky !important;
+   /* position: sticky !important;
+   top: 0px !important; */
+   border-radius: 20px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px #0002;
+  margin-bottom: 20px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.profile-overlay {
+  display: none;
+  top: 0;
+  background: transparent;
+  opacity: 0.3;
+  border-radius: 100%;
+  border: 1px solid transparent;
+}
+
+.profile-img-container:hover .profile-overlay {
+  display: block;
+  cursor: pointer;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  margin-top: -50px !important;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: 87px;
+  right: 12px;
+  border-bottom: 16px solid white;
+}
+.profile-dropDown-container {
+  z-index: 1030;
+  min-width: 290px;
+  max-width: 290px;
+  background: #fff;
+  right: 0px;
+  border-radius: 3px;
+  top: 48px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.profile-dropDown-img {
+  height: 42px;
+  width: 42px;
+  border-radius: 100%;
+}
+.details-container * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.profile-sub-text {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 200px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  color: #808080;
+}
+
+.profile-email {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  max-width: 120px;
+  font-size: 22px;
+  line-height: 22px;
+  /* or 114% */
+  color: #2d2d2d;
+}
+
+.profile-divider {
+  width: 100%;
+  border-bottom: 0.5px solid #c3cddf;
+}
+
+.profile-dropdown-options > * {
+  display: block;
+  width: 100%;
+  padding: 8px 0px 8px 6px;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #2d2d2d;
+  font-family: Nunito;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+}
+
+.profile-dropdown-options > *:hover {
+  background: #80747c33;
+  color: #2d2d2d;
+  cursor: pointer;
+}
+
+.switchEvent-pad {
+  padding-bottom: 0.8rem !important;
+}
+.pro-nav-container.jsx-1343939360 {
+  position: absolute;
+  right: 20px;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+.d-flex {
+  display: flex !important;
+}
+/* .row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+} */
+.konf-tab-title.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+@media (min-width: 992px) and (max-width: 1368px) {
+  .konf-tab-title {
+      font-size: .875rem;
+  }
+}
+.tabs{
+  display: flex;
+  justify-content:space-around;
+  border-width: 0
+}
+.tabs button {
+  border: none;
+  background: none; /* Optional: remove default button background */
+  padding: 10px 20px; /* Optional: add some padding for better appearance */
+  cursor: pointer; /* Optional: change cursor to pointer */
+}
+.event-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff; /* Change to your desired color */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+.event-button:hover {
+  background-color: #0056b3; /* Change to a darker shade for hover effect */
+}
+.pr-5{
+  padding-right: 50px;
+}
+.text-left{
+  text-align: left;
 }
